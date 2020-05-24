@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+
+  <!--metrics stuff-->
+  <!--format hint stuff-->
+  <!--strings with argument to provide-->
+  <!--first argument is a date, second a time, for instance: "Yesterday at 13:32"-->
+  <!--weird stuff: should it be placeholders or even removed?-->
+  <!--other-->
+  <string name="recovery">التعافي</string>
+  <string name="warm_up">الإحماء</string>
+  <string name="cool_down">الراحة</string>
+</resources>

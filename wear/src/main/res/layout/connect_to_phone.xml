@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.wearable.view.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        app:layout_box="all"
+
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+            <android.support.wearable.view.DelayedConfirmationView
+                android:id="@+id/icon_open_on_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/open_on_phone_animation"
+                app:circle_color="@color/action_button"
+                app:circle_radius="40dp"
+                app:circle_radius_pressed="50dp"
+                app:circle_border_width="5dp"
+                app:circle_border_color="@android:color/white"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Waiting_for_phone"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+</android.support.wearable.view.BoxInsetLayout>

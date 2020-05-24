@@ -1,0 +1,57 @@
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.6.3'
+    }
+}
+
+repositories {
+    google()
+    jcenter()
+}
+
+project.ext {
+    //Common settings for all builds
+    //Note that Android Studio does not know about the 'ext' module and will warn
+    //minSdkVersion differs between modules
+    buildToolsVersion = '29.0.3' //Update Travis manually
+    compileSdkVersion = 28 //Update Travis manually
+    targetSdkVersion = 28
+
+    supportLibrary = '28.0.0'
+    //Note: Later Play Services will require a rewrite of NodeApi.NodeListener
+    googlePlayServicesVersion = '11.0.4'
+    googleWearVersion = '2.3.0'
+
+    junitVersion = '4.12'
+    mockitoVersion = '2.3.7'
+
+    //The tag for the release must be identical for F-Droid
+    versionName = '2.0.6.1'
+    versionCode = 211
+
+    travisBuild = System.getenv("TRAVIS") == "true"
+    // allows for -Dpre-dex=false to be set
+    preDexEnabled = "true" == System.getProperty("pre-dex", "true")
+
+    // F-Droid builds only allow free software (wear dir deleted at builds)
+    allowNonFree = !project.hasProperty('org.runnerup.free') && rootProject.file("wear").exists()
+
+    // Note: AntPlus may have to be downloaded explicitly due to licensing
+    antPlusLib = "ANT-Android-SDKs/ANT+_Android_SDK/API/antpluginlib_3-8-0.aar"
+    if (!allowNonFree || project.hasProperty('org.runnerup.hr.disableAntPlus') || !rootProject.file(antPlusLib).exists()) {
+        antPlusLib = ""
+    }
+
+    // ApplicationId (possibly with a .debug suffix) shared Android and Wear
+    // Separate Id allows simultaneous installation
+    if (!rootProject.ext.allowNonFree) {
+        // Separate applicationId for the free version (must be first)
+        applicationId = "org.runnerup.free"
+    } else {
+        applicationId = "org.runnerup"
+    }
+}

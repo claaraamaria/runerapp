@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+
+  <string name="cue_lap">ronde</string>
+  <string name="cue_warmup">warming-up</string>
+  <string name="cue_cooldown">cooling-down</string>
+  <string name="cue_current">huidige</string>
+  <string name="cue_perkilometer">per kilometer</string>
+  <string name="cue_permile">per mijl</string>
+  <string name="cue_started">gestart</string>
+  <string name="cue_paused">gepauzeerd</string>
+  <string name="cue_resumed">hervatten</string>
+  <string name="cue_stopped">gestopt</string>
+  <string name="cue_completed">afgerond</string>
+  <string name="cue_speedup">versnellen</string>
+  <string name="cue_slowdown">vertragen</string>
+</resources>

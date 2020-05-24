@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+
+  <string name="app_name">RunnerUp</string>
+  <!--metrics stuff-->
+  <string name="metrics_distance_km">km</string>
+  <string name="metrics_distance_mi">mi</string>
+  <string name="metrics_distance_m">m</string>
+  <string name="metrics_elapsed_h">u</string>
+  <string name="metrics_elapsed_m">m</string>
+  <string name="metrics_elapsed_min">min</string>
+  <string name="metrics_elapsed_s">s</string>
+  <!--format hint stuff-->
+  <string name="Maximum_heart_rate_MHR">Maximale hartslag (MHS)</string>
+  <!--strings with argument to provide-->
+  <!--first argument is a date, second a time, for instance: "Yesterday at 13:32"-->
+  <!--weird stuff: should it be placeholders or even removed?-->
+  <!--other-->
+  <string name="recovery">herstel</string>
+  <string name="warm_up">opwarming</string>
+  <string name="cool_down">afkoeling</string>
+</resources>

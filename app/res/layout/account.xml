@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_margin="@dimen/activity_margin"
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center|center_horizontal|center_vertical" >
+
+        <TextView
+            android:id="@+id/account_list_name"
+            style="@style/AccountListText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="center" />
+
+        <ImageView
+            android:id="@+id/account_list_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            tools:ignore="ContentDescription"/>
+    </LinearLayout>
+
+   	<TableLayout
+        android:layout_margin="@dimen/activity_margin"
+		android:id="@+id/account_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name" >
+
+        <TableRow
+            android:id="@+id/table_row1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/disconnect_account_button"
+        style="@style/ButtonText"
+        android:background="@drawable/btn_red"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/account_upload_button"
+        android:text="@string/Disconnect" />
+
+    <Button
+        android:id="@+id/account_upload_button"
+        style="@style/ButtonText"
+        android:background="@drawable/btn_blue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/account_download_button"
+        android:text="@string/upload" />
+
+  <Button
+    style="@style/ButtonText"
+    android:id="@+id/account_download_button"
+    android:background="@drawable/btn_blue"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="false"
+    android:text="@string/Download"
+    android:layout_above="@+id/ok_account_button"/>
+
+  <Button
+        android:id="@+id/ok_account_button"
+        style="@style/ButtonText"
+        android:background="@drawable/btn_green"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/OK" />
+
+</RelativeLayout>

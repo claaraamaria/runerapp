@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/activity_margin">
+
+    <org.runnerup.widget.TitleSpinner
+        android:id="@+id/hrz_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Age"
+        app:type="numberpicker"
+        app:digits="3"
+        app:min_val="0"
+        app:max_val="300"
+        android:key="@string/pref_hrz_age" >
+    </org.runnerup.widget.TitleSpinner>
+
+    <org.runnerup.widget.TitleSpinner
+        android:id="@+id/hrz_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/sexes"
+        android:prompt="@string/Sex"
+        android:text="@string/Sex"
+        app:type="spinner"
+        android:key="@string/pref_hrz_sex" >
+    </org.runnerup.widget.TitleSpinner>
+    
+    <org.runnerup.widget.TitleSpinner
+        android:id="@+id/hrz_mhr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Maximum_heart_rate_MHR"
+        app:type="numberpicker"
+        app:digits="3"
+        app:min_val="0"
+        app:max_val="300"
+        android:key="@string/pref_hrz_mhr" >
+    </org.runnerup.widget.TitleSpinner>
+    
+    <TableLayout
+        android:id="@+id/zones_table"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </TableLayout>
+
+</LinearLayout>

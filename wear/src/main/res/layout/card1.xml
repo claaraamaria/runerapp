@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.wearable.view.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:background="@drawable/border" >
+
+                <TextView
+                    android:id="@+id/textViewHeader11"
+                    android:text="@string/time"
+                    style="@style/Card1TextSmall" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:text="--:--"
+                    tools:ignore="HardcodedText"
+                    style="@style/Card1TextLarge" />
+
+    </LinearLayout>
+
+</android.support.wearable.view.BoxInsetLayout>

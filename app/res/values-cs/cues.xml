@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+
+  <string name="cue_activity">aktivita</string>
+  <string name="cue_interval">interval</string>
+  <string name="cue_lap">kolo</string>
+  <string name="cue_warmup">rozehřátí</string>
+  <string name="cue_cooldown">zklidnění</string>
+  <string name="cue_current">současný</string>
+  <string name="cue_perkilometer">na kilometr</string>
+  <string name="cue_permile">na míli</string>
+  <string name="cue_started">zahájeno</string>
+  <string name="cue_paused">pozastaveno</string>
+  <string name="cue_resumed">obnoveno</string>
+  <string name="cue_stopped">zastaveno</string>
+  <string name="cue_completed">dokončeno</string>
+  <string name="cue_speedup">zrychlit</string>
+  <string name="cue_slowdown">zpomalit</string>
+  <string name="cue_activity_paused">aktivita pozastavena</string>
+  <string name="cue_activity_resumed">aktivita obnovena</string>
+  <string name="cue_activity_stopped">aktivita zastavena</string>
+  <string name="cue_lap_started">kolo začalo</string>
+  <string name="cue_lap_completed">kolo dokončeno</string>
+  <string name="cue_warmup_started">rozehřátí zahájeno</string>
+  <string name="cue_cooldown_started">zklidnění zahájeno</string>
+</resources>

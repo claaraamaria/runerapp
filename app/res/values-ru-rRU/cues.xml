@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+
+  <string name="cue_warmup">разминка</string>
+  <string name="cue_cooldown">заминка</string>
+</resources>

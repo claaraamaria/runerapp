@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.runnerup" >
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <application
+        android:allowBackup="true"
+        android:theme="@android:style/Theme.Black"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:keepScreenOn="true"
+        android:supportsRtl="true"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+
+        <meta-data
+            tools:replace="android:value"
+            android:name="android.support.VERSION"
+            android:value="@integer/google_play_services_version" />
+        <meta-data android:name="com.google.android.wearable.standalone" android:value="false"/>
+
+        <activity
+            android:name=".view.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="org.runnerup."/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <service android:name=".service.ListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.gms.wearable.DATA_CHANGED" />
+                <data android:host="*" android:pathPrefix="/org.runnerup" android:scheme="wear" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".service.StateService" />
+
+    </application>
+
+</manifest>
